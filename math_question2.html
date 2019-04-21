@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Math question 1</title>
+  </head>
+  <body>
+    <h1>(18 / 6 x 5) - 14 / 7 = ?</h1>
+
+    A - 11 <br>
+    B - 13 <br>
+    C - 14 <br>
+    D - 12 <br>
+<select id="answer">
+  <option value="A">A</option>
+  <option value="B">B</option>
+  <option value="C">C</option>
+  <option value="D">D</option>
+</select>
+
+<button type="button" onclick="checkAnswer()" name="button">Submit</button>
+  </body>
+  <script type="text/javascript">
+    function checkAnswer(){
+      answer = document.getElementById("answer").value
+      if(answer == "B"){
+        alert("RIGHT")
+      }
+      else{
+        alert("WRONG")
+      }
+    }
+  </script>
+</html>
