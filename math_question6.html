@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Math question 1</title>
+  </head>
+  <body>
+    <h1>36 / 6 * 6 = ?</h1>
+
+    A - 36 <br>
+    B - 42 <br>
+    C - 24 <br>
+    D - 32 <br>
+<select id="answer">
+  <option value="A">A</option>
+  <option value="B">B</option>
+  <option value="C">C</option>
+  <option value="D">D</option>
+</select>
+
+<button type="button" onclick="checkAnswer()" name="button">Submit</button>
+  </body>
+  <script type="text/javascript">
+    function checkAnswer(){
+      answer = document.getElementById("answer").value
+      if(answer == "A"){
+        alert("RIGHT")
+      }
+      else{
+        alert("WRONG")
+      }
+    }
+  </script>
+</html>
