@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Math question 1</title>
+  </head>
+  <body>
+    <h1>5 + 2 - 3 = ?</h1>
+
+    A - 1 <br>
+    B - 2 <br>
+    C - 4 <br>
+    D - 12 <br>
+<select id="answer">
+  <option value="A">A</option>
+  <option value="B">B</option>
+  <option value="C">C</option>
+  <option value="D">D</option>
+</select>
+
+<button type="button" onclick="checkAnswer()" name="button">Submit</button>
+  </body>
+  <script type="text/javascript">
+    function checkAnswer(){
+      answer = document.getElementById("answer").value
+
+      if(answer == "C"){
+        alert("RIGHT")
+      }
+      else{
+        alert("WRONG")
+      }
+
+    }
+  </script>
+</html>
