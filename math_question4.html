@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Math question 1</title>
+  </head>
+  <body>
+    <h1>2^2 * 2^2 / 2 = ?</h1>
+
+    A - 8 <br>
+    B - 10 <br>
+    C - 12 <br>
+    D - 14 <br>
+<select id="answer">
+  <option value="A">A</option>
+  <option value="B">B</option>
+  <option value="C">C</option>
+  <option value="D">D</option>
+</select>
+
+<button type="button" onclick="checkAnswer()" name="button">Submit</button>
+  </body>
+  <script type="text/javascript">
+    function checkAnswer(){
+      answer = document.getElementById("answer").value
+      if(answer == "A"){
+        alert("RIGHT")
+      }
+      else{
+        alert("WRONG")
+      }
+    }
+  </script>
+</html>
